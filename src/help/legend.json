@@ -1262,8 +1262,8 @@
         "en": "Region resolution"
       },
       "desc": {
-        "he": "רזולוציית העבודה של אזור המילוי (1K–3K).",
-        "en": "Working resolution of the fill region (1K–3K)."
+        "he": "כברירת מחדל \"מותאם לאזור\": הג'נרוט נעשה בגודל האמיתי של השטח המסומן, בפיקסלים של השכבה שמתחתיו, והגודל שיישלח מוצג בשורת הפקדים. גודל קבוע (1K–3K) גובר עליו.",
+        "en": "By default \"Match the area\": generated at the marked area's real size, in the pixels of the layer under it; the size to be sent shows in the controls row. A fixed size (1K–3K) overrides it."
       }
     },
     {

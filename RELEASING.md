@@ -79,7 +79,18 @@ appId. לסגור את הדב, או להריץ עם `--user-data-dir` נפרד.
 
 ## שלב 6 — GitHub
 
-אין `git remote` מוגדר בריפו הזה, אז ההעלאה ידנית: שחרור בשם `v0.3.0` תחת
+**קוד המקור:** `origin` הוא `AbuIvri/Mechanical_brush`, והריפו **ציבורי**. ההיסטוריה המקומית
+לא נדחפת לעולם (ראו "דברים שנשארו פתוחים") — רק snapshot של העץ הנוכחי מעל `origin/main`:
+
+```bash
+git fetch origin && SNAP=$(git commit-tree HEAD^{tree} -p origin/main -m "<גרסה> — snapshot") \
+  && git branch -f github $SNAP && git push origin github:main
+```
+
+לפני הדחיפה: `git ls-tree -r --name-only github` לא מכיל `issue-tool.html`, `resend-tool.html`,
+`license-codes/` או `.pem`.
+
+**קובצי ההתקנה:** ידנית בדפדפן — שחרור בשם `v0.3.0` תחת
 `AbuIvri/Mechanical_brush`, ושני הקבצים מ-`release/להעלאה-0.3.0/` כנכסים. השמות
 חייבים להיות **בדיוק** אלה שהאתר והמיילים מקשרים אליהם. התיאור — מתוך `CHANGELOG.md`.
 
@@ -182,8 +193,9 @@ node scripts/gen-issue-tool.mjs
   השחרור ההוא קיים, ומראה ממשק ישן.
 - **אין חתימה דיגיטלית** לשתי הפלטפורמות. זה החיכוך הכי גדול בהתקנה ראשונה.
 - **`email/issue-tool.html` היה מגובה ב-git עם 26 קודים חיים בתוכו** עד השחרור הזה.
-  הוא הוצא מהמעקב ונוסף ל-gitignore, אבל **ההיסטוריה עדיין מכילה אותם** — אם הריפו
-  ייצא פעם החוצה, יש להתייחס לקודים של יוני כשרופים ולהחליף אותם.
+  הוא הוצא מהמעקב ונוסף ל-gitignore, אבל **ההיסטוריה המקומית עדיין מכילה אותם**. ב-17
+  בנובמבר 2026 הקוד עלה לריפו הציבורי כ-snapshot בלבד, בלי ההיסטוריה, ולכן הקודים לא
+  נחשפו. אם ההיסטוריה תידחף אי פעם — יש להתייחס לקודים של יוני כשרופים ולהחליף אותם.
 - **`license-private-key.pem` ו-`license-codes/`** ב-gitignore ולא נכנסים לריפו ולא
   לחבילה. המפתח הפרטי של החתימה חי כ-secret ב-Worker
   (`wrangler secret put SIGN_KEY_PKCS8_B64`) — לא בקוד.
