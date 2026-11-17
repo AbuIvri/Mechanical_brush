@@ -1,0 +1,122 @@
+<title>התקנת המכחול המכני</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=David+Libre:wght@700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Hebrew:wght@400;500;600&display=swap">
+<style>
+  /* One column for a phone in a classroom: steps down the page, each system in its own block. */
+  :root {
+    --ground: #1b1b1b; --raised: #242424; --line: #333333; --edge: #6f6f6c;
+    --muted: #8b8b88; --text: #d9d9d6; --bright: #f3f3f0; --ink: #e96a1b; --warn: #e2b33c;
+    --hand: "David Libre", "Frank Ruhl Libre", serif;
+    --steel: "IBM Plex Sans Hebrew", "Arial Hebrew", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    --stroke: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cfilter id='f' x='-10%25' y='-30%25' width='120%25' height='160%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02 0.3' numOctaves='2' seed='7' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='11' xChannelSelector='R' yChannelSelector='G' result='d'/%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.008 0.7' numOctaves='1' seed='19' result='s'/%3E%3CfeColorMatrix in='s' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11 0 0 0 7.1' result='m'/%3E%3CfeComposite in='d' in2='m' operator='in'/%3E%3C/filter%3E%3Cpath filter='url(%23f)' d='M7 15C58 5 150 7 194 15C199 28 197 44 191 50C140 57 52 55 9 48C3 37 3 25 7 15Z'/%3E%3C/svg%3E");
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--ground); color: var(--text); font: 400 16px/1.65 var(--steel); }
+  .page { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header { margin-bottom: 32px; }
+  .stage { font: 500 11px/1 var(--mono); letter-spacing: .1em; color: var(--muted); }
+  h1 { position: relative; display: inline-block; margin: 8px 0 12px; font: 700 34px/1.15 var(--hand); color: var(--bright); text-wrap: balance; isolation: isolate; }
+  h1::after { content: ""; position: absolute; z-index: -1; inset: auto -6px -4px -6px; height: 7px; background: var(--ink); -webkit-mask: var(--stroke) center / 100% 100% no-repeat; mask: var(--stroke) center / 100% 100% no-repeat; }
+  .lead { margin: 0; color: var(--text); }
+  h2 { margin: 40px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); font: 600 20px/1.3 var(--steel); color: var(--bright); }
+  h3 { margin: 24px 0 8px; font: 600 16px/1.4 var(--steel); color: var(--bright); }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 12px; padding-inline-start: 22px; }
+  li { margin: 6px 0; }
+  li::marker { color: var(--muted); font-family: var(--mono); font-size: 14px; }
+  b { color: var(--bright); font-weight: 600; }
+  .say { color: var(--bright); font-weight: 500; }
+  .num, code { font-family: var(--mono); font-size: .92em; direction: ltr; unicode-bidi: isolate; }
+  code { color: var(--bright); }
+  .path { display: block; margin: 6px 0 12px; padding: 8px 12px; overflow-x: auto; background: var(--raised); border: 1px solid var(--line); color: var(--bright); font: 400 13px/1.6 var(--mono); direction: ltr; text-align: left; white-space: nowrap; }
+  .need { display: grid; gap: 0; margin: 0 0 12px; padding: 0; list-style: none; }
+  .need li { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .need li:first-child { border-top: 1px solid var(--line); }
+  .need small { display: block; color: var(--muted); font-size: 14px; }
+  .dl { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 16px; }
+  .dl a { display: inline-flex; flex-direction: column; gap: 2px; min-height: 44px; padding: 10px 16px; border: 1px solid var(--edge); color: var(--bright); text-decoration: none; font-weight: 500; }
+  .dl a:hover, .dl a:focus-visible { border-color: var(--bright); }
+  .dl a small { color: var(--muted); font: 400 12px/1.4 var(--mono); }
+  a { color: var(--bright); }
+  a:focus-visible { outline: 2px solid var(--bright); outline-offset: 2px; }
+  .note { margin: 12px 0; padding: 10px 14px; border-inline-start: 2px solid var(--warn); background: var(--raised); }
+  .note b { color: var(--warn); }
+  .faq dt { margin-top: 16px; color: var(--bright); font-weight: 600; }
+  .faq dd { margin: 4px 0 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+
+<div class="page" dir="rtl" lang="he">
+  <header>
+    <div class="stage">BETA · <span class="num">0.4.0</span></div>
+    <h1>התקנת המכחול המכני</h1>
+    <p class="lead">מה להכין, איך להתקין ב-Mac או ב-Windows, ואיך להפעיל בפעם הראשונה. ההתקנה לוקחת כעשר דקות.</p>
+  </header>
+
+  <h2>מה צריך לפני השיעור</h2>
+  <ul class="need">
+    <li><b>מחשב Mac או Windows</b><small>Mac: כל מחשב, גם עם שבב Apple וגם עם Intel. Windows: גרסת ‎64-bit.</small></li>
+    <li><b>חיבור לאינטרנט</b><small>להורדה, להפעלת הקוד, ולכל יצירה של תמונה.</small></li>
+    <li><b>קוד הפעלה</b><small>מקבלים אותו בשיעור. קוד אחד למחשב אחד: אחרי שהופעל, הוא נקשר למחשב שלך ולא יעבוד באחר.</small></li>
+    <li><b>מפתח API של ספק תמונות, עם קרדיט בחשבון</b><small>לפי הספק שנבקש בשיעור (למשל OpenAI). כל יצירה עולה כסף לפי התעריף של הספק, ומשולמת ישירות אליו. אם הספק מבקש לאמת את החשבון, עשה את זה לפני השיעור.</small></li>
+  </ul>
+
+  <h2>הורדה</h2>
+  <div class="dl">
+    <a href="https://github.com/AbuIvri/Mechanical_brush/releases/download/v0.4.0/mechanical-brush-0.4.0.dmg">הורדה ל-Mac<small>mechanical-brush-0.4.0.dmg · 236MB</small></a>
+    <a href="https://github.com/AbuIvri/Mechanical_brush/releases/download/v0.4.0/mechanical-brush-setup-0.4.0.exe">הורדה ל-Windows<small>mechanical-brush-setup-0.4.0.exe · 133MB</small></a>
+  </div>
+
+  <h2>התקנה ב-Mac</h2>
+  <ol>
+    <li>פתח את הקובץ <code>mechanical-brush-0.4.0.dmg</code> שהורדת.</li>
+    <li>גרור את <b>The Mechanical Brush</b> לתיקייה <b>Applications</b>.</li>
+    <li>פתח את האפליקציה מתוך Applications.</li>
+  </ol>
+  <p>בפעם הראשונה macOS יעצור ויגיד שאי אפשר לאמת את המפתח של האפליקציה. זה צפוי: האפליקציה עדיין לא רשומה אצל Apple. כדי לפתוח אותה:</p>
+  <ol>
+    <li>לחץ <span class="say">סיום</span> (או <span class="say">אישור</span>) בהודעה.</li>
+    <li>פתח את <b>הגדרות המערכת</b> ← <b>פרטיות ואבטחה</b>.</li>
+    <li>גלול למטה עד לשורה על The Mechanical Brush ולחץ <span class="say">פתח בכל זאת</span>.</li>
+    <li>אשר עם הסיסמה של המחשב (או Touch ID), ולחץ שוב <span class="say">פתח</span>.</li>
+  </ol>
+  <p>מהפעם השנייה האפליקציה נפתחת רגיל.</p>
+
+  <h2>התקנה ב-Windows</h2>
+  <ol>
+    <li>הפעל את <code>mechanical-brush-setup-0.4.0.exe</code> שהורדת.</li>
+    <li>אם מופיע מסך כחול של <b>Windows protected your PC</b> (המחשב שלך מוגן): לחץ <span class="say">More info</span> (מידע נוסף), ואז <span class="say">Run anyway</span> (הפעל בכל זאת).</li>
+    <li>ההתקנה רצה לבד ופותחת את האפליקציה בסוף. אין צורך בהרשאות מנהל.</li>
+  </ol>
+
+  <h2>הפעלה ראשונה</h2>
+  <ol>
+    <li>במסך הפתיחה לחץ על התמונה כדי להמשיך.</li>
+    <li><b>קוד רישוי:</b> הדבק את הקוד שקיבלת ולחץ <span class="say">הפעל</span>. צריך חיבור לאינטרנט.</li>
+    <li><b>מנוע ומפתח:</b> בחר את המנוע שנבקש בשיעור, הדבק את מפתח ה-API ולחץ <span class="say">התחל</span>. המפתח נשמר מוצפן במחשב שלך, ולא נכנס לקבצי הפרויקט.</li>
+    <li>זהו. אפשר לפתוח תמונה ולהתחיל.</li>
+  </ol>
+
+  <h2>אם משהו לא עובד</h2>
+  <dl class="faq">
+    <dt>"הקוד כבר נוצל במחשב אחר"</dt>
+    <dd>הקוד הופעל כבר במחשב אחר. כל קוד עובד במחשב אחד בלבד. בקש קוד חדש.</dd>
+    <dt>"קוד לא קיים"</dt>
+    <dd>בדוק שהדבקת את כל הקוד, בלי רווח בהתחלה או בסוף.</dd>
+    <dt>הודעה על קרדיטים או על מכסה (quota)</dt>
+    <dd>נגמר הקרדיט בחשבון אצל ספק התמונות. טען קרדיט באתר של הספק ונסה שוב.</dd>
+    <dt>"המנוע לא ענה בזמן"</dt>
+    <dd>הבקשה לקחה יותר מדי זמן ובוטלה, ולא נוצרה שכבה. ייתכן שהספק בכל זאת חייב עליה, אז בדוק בחשבון אצלו לפני שתריץ שוב.</dd>
+    <dt>מסך "משהו השתבש בתצוגה"</dt>
+    <dd>לחץ <span class="say">טען מחדש</span>. העבודה שלא נשמרה נשמרת אוטומטית, והאפליקציה תציע לשחזר אותה.</dd>
+    <dt>רוצה לדווח על תקלה</dt>
+    <dd>בתפריט <b>עוד</b> ← <b>משוב למפתח</b>. אם ביקשו ממך את קובץ הלוג, הוא נמצא כאן:
+      <span class="path">Mac: ~/Library/Application Support/The Mechanical Brush/logs/mbrush.log</span>
+      <span class="path">Windows: %APPDATA%\The Mechanical Brush\logs\mbrush.log</span>
+    </dd>
+  </dl>
+
+  <footer>המכחול המכני · גרסת בטא <span class="num">0.4.0</span>. התוכנה מסופקת כמות שהיא.</footer>
+</div>

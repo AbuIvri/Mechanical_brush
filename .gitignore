@@ -1,0 +1,20 @@
+node_modules
+dist
+dist-electron
+release
+*.log
+.DS_Store
+credentials.enc.json
+
+license-private-key.pem
+license-codes/
+server/activation/.wrangler/
+server/activation/node_modules/
+
+# The issue tool is GENERATED and embeds real activation codes from license-codes/.
+# license-codes/ is ignored so codes never enter the repo; without this line the
+# generated copy smuggles them in anyway. Rebuild it with:
+#   node scripts/gen-issue-tool.mjs
+email/issue-tool.html
+# Same reason: it embeds real recipients and their codes.
+email/resend-tool.html

@@ -1,0 +1,177 @@
+<!doctype html>
+<!--
+  RE-SEND email: for people who were given a code and never activated it.
+  Different from access-email.html — it assumes they already have the code, names
+  the two things that most likely stopped them, and repeats their existing code.
+  HOW TO USE:
+  1) Replace {{NAME}} with the recipient's name (or delete that word).
+  2) Replace {{CODE}} with THEIR ORIGINAL code (not a new one) — see
+     license-codes/never-activated.csv.
+  3) Open this file in a browser → Select All (⌘A) → Copy (⌘C) →
+     paste into a Gmail "Compose" window. Gmail keeps the formatting.
+     Subject suggestion:  הקוד שלך למכחול המכני עדיין מחכה 🎨
+  4) The download links point at v0.3.0. AFTER EVERY RELEASE, update them here too —
+     this file is easy to forget, and a new tester following a stale link installs an
+     old build and blames the app.
+-->
+<html dir="rtl" lang="he">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="color-scheme" content="dark" /></head>
+<body style="margin:0;padding:0;background:#0b0c0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#0b0c0f" style="background:#0b0c0f;padding:24px 12px;">
+<tr><td align="center">
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" bgcolor="#15161c" style="max-width:600px;width:100%;background:#15161c;border:1px solid #2a2f3a;border-radius:16px;overflow:hidden;font-family:'Helvetica Neue',Arial,'Heebo',sans-serif;direction:rtl;">
+
+    <!-- Header -->
+    <tr><td bgcolor="#101116" style="background:#101116;padding:22px 30px;border-bottom:1px solid #2a2f3a;" align="right">
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+        <td style="vertical-align:middle;">
+          <img src="https://mbrush-site.saundersnp.workers.dev/assets/logo.png" width="42" height="42" alt="" style="display:block;border-radius:9px;" />
+        </td>
+        <td style="vertical-align:middle;padding-right:12px;">
+          <div style="color:#d98a3d;font-size:19px;font-weight:800;line-height:1.1;">המכחול המכני
+            <span style="background:#d98a3d;color:#14151a;font-size:10px;font-weight:800;border-radius:4px;padding:2px 5px;vertical-align:middle;">ALPHA</span>
+          </div>
+          <div style="color:#8a91a0;font-size:12px;letter-spacing:.5px;">The Mechanical Brush</div>
+        </td>
+      </tr></table>
+    </td></tr>
+
+    <!-- Hero image -->
+    <tr><td style="padding:0;">
+      <img src="https://mbrush-site.saundersnp.workers.dev/assets/work-2.jpg" width="600" alt="" style="display:block;width:100%;max-width:600px;height:auto;border:0;" />
+    </td></tr>
+    <tr><td bgcolor="#15161c" style="background:#15161c;padding:22px 30px 0;" align="center">
+      <div style="color:#ffffff;font-size:22px;font-weight:800;line-height:1.25;">ה-AI כמכחול. בעורך שכבות אמיתי.</div>
+    </td></tr>
+
+    <!-- Body -->
+    <tr><td bgcolor="#15161c" style="background:#15161c;padding:18px 30px 8px;">
+      <p style="font-size:16px;font-weight:700;color:#ffffff;margin:0 0 12px;">שלום {{NAME}} 👋</p>
+      <p style="font-size:14px;line-height:1.75;color:#b9bfca;margin:0 0 4px;">
+        שלחתי לך קוד גישה ל<b style="color:#e6e8ee;">המכחול המכני</b> לפני כמה חודשים, ואני רואה שהוא עדיין לא הופעל.
+        לא באתי לנדנד — רק להגיד שני דברים: <b style="color:#e6e8ee;">הקוד עדיין תקף וממתין לך</b>,
+        ובינתיים יצאה גרסה חדשה שהיא קפיצה משמעותית ממה שהיה אז.
+        אם משהו עצר אותך באמצע — יש סיכוי טוב שהוא אחד משניים, ושניהם למטה. 👇
+      </p>
+    </td></tr>
+
+    <!-- Code box -->
+    <tr><td bgcolor="#15161c" style="background:#15161c;padding:14px 30px 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1c1710" style="border:1.5px solid #d98a3d;border-radius:12px;background:#1c1710;">
+        <tr><td align="center" style="padding:16px;">
+          <div style="font-size:12px;color:#d98a3d;font-weight:700;margin-bottom:7px;letter-spacing:.5px;">הקוד שלך — אותו קוד, עדיין פעיל</div>
+          <div style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:23px;font-weight:800;letter-spacing:2px;color:#ffffff;direction:ltr;">{{CODE}}</div>
+          <div style="font-size:12px;color:#c79a6a;margin-top:9px;line-height:1.5;">⚠️ הקוד תקף ל<b style="color:#e6c79a;">התקנה אחת במכשיר אחד</b> — בהפעלה הוא ננעל למחשב שבו הזנת אותו, ולא יעבוד במכשיר אחר.</div>
+        </td></tr>
+      </table>
+    </td></tr>
+
+    <!-- Steps -->
+    <tr><td bgcolor="#15161c" style="background:#15161c;padding:22px 30px 4px;">
+      <p style="font-size:15px;font-weight:800;color:#d98a3d;margin:0 0 12px;">שני הדברים שהכי מפילים בהתחלה</p>
+
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#101116" style="background:#101116;border:1px solid #2a2f3a;border-radius:12px;margin-bottom:14px;">
+        <tr><td style="padding:14px 16px;">
+          <div style="font-size:13px;font-weight:800;color:#e6e8ee;margin-bottom:5px;">1. אזהרת אבטחה בפתיחה הראשונה</div>
+          <div style="font-size:13px;color:#b9bfca;line-height:1.65;">
+            האפליקציה עדיין לא חתומה דיגיטלית, אז המערכת חוסמת אותה בפעם הראשונה. זה נראה מפחיד ולא אומר כלום על הקובץ.<br />
+            <b style="color:#e6e8ee;">ב-Mac:</b> קליק־ימני על האפליקציה ← Open ← ושוב Open.<br />
+            <b style="color:#e6e8ee;">ב-Windows:</b> "More info" ← "Run anyway".
+          </div>
+        </td></tr>
+      </table>
+
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#101116" style="background:#101116;border:1px solid #2a2f3a;border-radius:12px;margin-bottom:16px;">
+        <tr><td style="padding:14px 16px;">
+          <div style="font-size:13px;font-weight:800;color:#e6e8ee;margin-bottom:5px;">2. צריך מפתח API — וזה נשמע יותר מסובך ממה שזה</div>
+          <div style="font-size:13px;color:#b9bfca;line-height:1.65;">
+            אני לא מוכר קרדיטים ולא לוקח עמלה. אתה מתחבר ישירות לספק ה-AI עם מפתח אישי ומשלם לו לפי שימוש —
+            <b style="color:#e6e8ee;">סנטים בודדים לתמונה</b>, בלי מנוי. ההרשמה לוקחת כמה דקות וצריך להטעין קצת קרדיט אצל הספק.
+            הפירוט המלא לכל מנוע נמצא למטה.<br />
+            <b style="color:#e6e8ee;">נתקעת בשלב הזה? השב למייל הזה ואעבור איתך על זה.</b>
+          </div>
+        </td></tr>
+      </table>
+
+      <p style="font-size:15px;font-weight:800;color:#d98a3d;margin:0 0 10px;">מה השתנה מאז ששלחתי לך</p>
+      <ul style="margin:0 0 16px;padding:0 18px 0 0;color:#b9bfca;font-size:13px;line-height:1.8;">
+        <li><b style="color:#e6e8ee;">הסרת רקע</b> — מצב שמחזיר את הנושא על רקע שקוף אמיתי.</li>
+        <li><b style="color:#e6e8ee;">עוזר פרומפטים בעברית</b>, עם תהליכי עבודה שאפשר לבנות פעם אחת ולהריץ שוב.</li>
+        <li><b style="color:#e6e8ee;">עבודה על עד 10 תמונות במקביל</b>, ועיבוד באטץ' על תיקייה שלמה.</li>
+        <li><b style="color:#e6e8ee;">שני מנועים חדשים</b> ושליטה מלאה ברזולוציה בכל מצב.</li>
+        <li>מברשת סימון חופשית, השטחת שכבות, מוזאיק להשוואה, וסימון על הקנבס.</li>
+      </ul>
+
+      <p style="font-size:14px;line-height:1.6;color:#e6e8ee;margin:0 0 8px;">הורדה — הגרסה החדשה:</p>
+      <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 0 16px;"><tr>
+        <td style="padding-left:8px;">
+          <a href="https://github.com/AbuIvri/Mechanical_brush/releases/download/v0.3.0/mechanical-brush-0.3.0.dmg" style="display:inline-block;background:#d98a3d;color:#14151a;text-decoration:none;font-size:13px;font-weight:800;padding:11px 20px;border-radius:8px;">⬇ הורדה ל-Mac</a>
+        </td>
+        <td>
+          <a href="https://github.com/AbuIvri/Mechanical_brush/releases/download/v0.3.0/mechanical-brush-setup-0.3.0.exe" style="display:inline-block;background:#d98a3d;color:#14151a;text-decoration:none;font-size:13px;font-weight:800;padding:11px 20px;border-radius:8px;">⬇ הורדה ל-Windows</a>
+        </td>
+      </tr></table>
+    </td></tr>
+
+    <!-- API keys explainer -->
+    <tr><td bgcolor="#15161c" style="background:#15161c;padding:14px 30px 4px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#101116" style="background:#101116;border:1px solid #2a2f3a;border-radius:12px;">
+        <tr><td style="padding:18px 18px 8px;">
+          <div style="font-size:15px;font-weight:800;color:#ffffff;margin-bottom:8px;">🔑 על מפתחות ה-API — חשוב להבין</div>
+          <p style="font-size:13px;line-height:1.7;color:#b9bfca;margin:0 0 10px;">
+            המכחול המכני לא מוכר לך קרדיטים ולא לוקח עמלה. אתה מתחבר <b style="color:#e6e8ee;">ישירות</b> אל ספק ה-AI
+            עם מפתח אישי משלך, ומשלם לו לפי שימוש בלבד (סנטים בודדים לתמונה) — בלי מנוי ובלי מתווך.
+            המפתח נשמר <b style="color:#e6e8ee;">מוצפן מקומית</b> במחשב שלך (Keychain), לעולם לא בשרת שלנו ולא בקבצי הפרויקט.
+            האפליקציה מציגה <b style="color:#e6e8ee;">אומדן עלות בזמן אמת</b> לכל יצירה, כך שאתה תמיד יודע כמה זה עולה.
+          </p>
+          <p style="font-size:13px;line-height:1.7;color:#b9bfca;margin:0 0 12px;">
+            צריך <b style="color:#e6e8ee;">מפתח אחד לפחות</b> כדי להתחיל. בכל ספק: נרשמים, יוצרים מפתח,
+            ו<b style="color:#e6e8ee;">מטעינים קצת קרדיט</b> בחשבון הספק (לרוב נדרש להוסיף אמצעי תשלום). אפשר להתחבר לכמה ספקים ולעבור ביניהם באפליקציה.
+          </p>
+
+          <!-- Engine 1 -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #2a2f3a;"><tr><td style="padding:11px 0 9px;">
+            <div style="font-size:13px;font-weight:700;color:#e6e8ee;">GPT Image 2 <span style="color:#8a91a0;font-weight:400;">· OpenAI</span></div>
+            <div style="font-size:12px;color:#9aa1ac;line-height:1.5;margin:3px 0 6px;">איכות גבוהה, רינדור טקסט מצוין, אפסקייל 4K נייטיב. ~$0.17 עריכה · ~$0.87 ל-4K.</div>
+            <a href="https://platform.openai.com/api-keys" style="color:#d98a3d;font-size:12px;font-weight:700;text-decoration:none;">קבל מפתח ב-platform.openai.com ↗</a>
+          </td></tr></table>
+
+          <!-- Engine 2 -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #2a2f3a;"><tr><td style="padding:11px 0 9px;">
+            <div style="font-size:13px;font-weight:700;color:#e6e8ee;">Nano Banana 2 <span style="color:#8a91a0;font-weight:400;">· Gemini Flash via fal.ai</span></div>
+            <div style="font-size:12px;color:#9aa1ac;line-height:1.5;margin:3px 0 6px;">מהיר ומשתלם, מצוין לאפסקייל 4K. ~$0.067 ל-1K · ~$0.151 ל-4K.</div>
+            <a href="https://fal.ai/dashboard/keys" style="color:#d98a3d;font-size:12px;font-weight:700;text-decoration:none;">קבל מפתח ב-fal.ai ↗</a>
+          </td></tr></table>
+
+          <!-- Engine 3 -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #2a2f3a;"><tr><td style="padding:11px 0 9px;">
+            <div style="font-size:13px;font-weight:700;color:#e6e8ee;">Reve 2.0</div>
+            <div style="font-size:12px;color:#9aa1ac;line-height:1.5;margin:3px 0 6px;">מצוין בעריכה וברינדור טקסט. מצב Fast זול במיוחד לאיטרציות. ~$0.04 עריכה.</div>
+            <a href="https://api.reve.com" style="color:#d98a3d;font-size:12px;font-weight:700;text-decoration:none;">קבל מפתח ב-api.reve.com ↗</a>
+          </td></tr></table>
+        </td></tr>
+      </table>
+    </td></tr>
+
+    <!-- Guide button -->
+    <tr><td bgcolor="#15161c" style="background:#15161c;padding:22px 30px 6px;" align="center">
+      <a href="https://mbrush-site.saundersnp.workers.dev/legend" style="display:inline-block;background:#d98a3d;color:#14151a;text-decoration:none;font-size:14px;font-weight:800;padding:12px 26px;border-radius:9px;">📖 מקרא הממשק וקיצורי מקלדת</a>
+      <div style="font-size:12px;color:#8a91a0;margin-top:10px;">כל הכלים, הכפתורים והאפשרויות במקום אחד · <a href="https://mbrush-site.saundersnp.workers.dev" style="color:#d98a3d;">האתר המלא</a></div>
+    </td></tr>
+
+    <!-- Footer -->
+    <tr><td bgcolor="#101116" style="background:#101116;padding:20px 30px 26px;border-top:1px solid #2a2f3a;">
+      <div style="font-size:12px;line-height:1.7;color:#8a91a0;">
+        אם זה פשוט לא בשבילך — גם זה תשובה לגיטימית, ואשמח לדעת כדי לפנות את המקום למישהו אחר.
+        ואם כן ניסית ומשהו לא עבד — זה בדיוק מה שאני צריך לשמוע. פשוט השב למייל הזה,
+        או כתוב ל-<a href="mailto:saundersnp@gmail.com" style="color:#d98a3d;" dir="ltr">saundersnp@gmail.com</a>.
+        <br /><br />
+        כל הזכויות שמורות לנמרוד סונדרס — המכחול המכני <span dir="ltr">· © 2026</span>
+      </div>
+    </td></tr>
+
+  </table>
+</td></tr>
+</table>
+</body>
+</html>

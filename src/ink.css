@@ -1,0 +1,41 @@
+/* The ink — the one place the colour --ink is allowed to appear.
+ *
+ * דיו ופלדה has two voices. Everything the machine measures is steel: grey, straight,
+ * still. What the person decided — which tool, which tab, what will run — is ink. It is
+ * worth something only while it is rare, so it lives here and nowhere else: `var(--ink)`
+ * must not appear in any other stylesheet (tests/inkDiscipline.test.ts holds that line).
+ *
+ * The ink used to be cut to a painted brush edge. Against the layered, straight-edged
+ * chrome the rough shape read as decoration rather than state, so it is now plain: a flat
+ * fill for what is chosen, a straight 2px line for the chosen tab. The colour carries the
+ * meaning on its own. The brush lives on in one place only: the app's logo.
+ */
+
+/* An element with .ink carries the ink BEHIND its content, as a flat fill. Place it with
+   --ink-inset, or .ink--under for an underline. (.ink--dry is kept as a name only: there
+   is no wet/dry difference without the brush.) */
+.ink { position: relative; isolation: isolate; }
+.ink::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  inset: var(--ink-inset, 0); background: var(--ink);
+}
+.ink--under::before { inset: auto 0 -4px 0; height: 2px; }
+/* The class can stay on an element that is only sometimes the chosen one. */
+.ink--off::before { content: none; }
+
+/* What sits on the ink. */
+.on-ink { color: var(--on-ink); }
+
+/* Run, while it runs: the ink fills across a steel bed, right to left, again and again.
+   This and the hover on Run are the only motion in the interface. */
+.ink--running::after {
+  content: ""; position: absolute; z-index: -2; pointer-events: none;
+  inset: var(--ink-inset, 0); background: var(--steel-500);
+}
+/* Stays ink even on a disabled button: Run is disabled WHILE it runs. */
+.ink.ink--running::before { background: var(--ink); animation: ink-sweep 1.8s var(--ease) infinite; }
+@keyframes ink-sweep { 0% { clip-path: inset(0 0 0 100%); } 70%, 100% { clip-path: inset(0 0 0 0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .ink.ink--running::before { animation: none; }
+}

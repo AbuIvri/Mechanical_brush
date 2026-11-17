@@ -1,0 +1,1528 @@
+{
+  "sections": [
+    {
+      "area": {
+        "he": "סרגל עליון",
+        "en": "Top bar"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "תמונה חדשה",
+            "en": "New image"
+          },
+          "desc": {
+            "he": "יצירת תמונה חדשה מטקסט (AI), בלי קובץ מקור.",
+            "en": "Create a new image from text (AI), no source file."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "פתח",
+            "en": "Open"
+          },
+          "desc": {
+            "he": "פתיחת תמונה או פרויקט ‎.mbrush‎.",
+            "en": "Open an image or a .mbrush project."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "שמור",
+            "en": "Save"
+          },
+          "desc": {
+            "he": "שמירת הפרויקט לקובץ הקיים.",
+            "en": "Save the project to its existing file."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "שמור בשם",
+            "en": "Save as"
+          },
+          "desc": {
+            "he": "שמירת הפרויקט בקובץ חדש.",
+            "en": "Save the project to a new file."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "ייצוא PNG",
+            "en": "Export PNG"
+          },
+          "desc": {
+            "he": "ייצוא התמונה השטוחה כ-PNG.",
+            "en": "Export the flattened image as a PNG."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סגור",
+            "en": "Close"
+          },
+          "desc": {
+            "he": "סגירת העבודה וחזרה לגלריה.",
+            "en": "Close the project and return to the gallery."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "בטל",
+            "en": "Undo"
+          },
+          "desc": {
+            "he": "ביטול הפעולה האחרונה (⌘/Ctrl + Z).",
+            "en": "Undo the last action (⌘/Ctrl + Z)."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "שחזר",
+            "en": "Redo"
+          },
+          "desc": {
+            "he": "שחזור פעולה שבוטלה (⇧⌘/Ctrl+Shift + Z).",
+            "en": "Redo an undone action (⇧⌘/Ctrl+Shift + Z)."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מונה הוצאות",
+            "en": "Spend meter"
+          },
+          "desc": {
+            "he": "סה״כ מוערך + הוצאת הפעלה. לחיצה פותחת פירוט מלא.",
+            "en": "Estimated total + session spend. Click for a full breakdown."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "בחירת מנוע",
+            "en": "Engine picker"
+          },
+          "desc": {
+            "he": "בחירת ספק ה-AI (umage2 / Reve / Nano Banana) והמודל שבתוכו.",
+            "en": "Choose the AI provider (umage2 / Reve / Nano Banana) and the model within it."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "בחירת מודל",
+            "en": "Model picker"
+          },
+          "desc": {
+            "he": "בחירת המודל בתוך המנוע שנבחר.",
+            "en": "Choose the model within the selected engine."
+          }
+        },
+        {
+          "glyph": "●",
+          "label": {
+            "he": "מחוון מפתח",
+            "en": "Key indicator"
+          },
+          "desc": {
+            "he": "נקודה מלאה = מפתח API מוגדר, טבעת ריקה = חסר מפתח.",
+            "en": "Filled dot = API key configured, hollow ring = missing."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "משוב",
+            "en": "Feedback"
+          },
+          "desc": {
+            "he": "שליחת משוב ישירות למפתח.",
+            "en": "Send feedback straight to the developer."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "הגדרות",
+            "en": "Settings"
+          },
+          "desc": {
+            "he": "ניהול מפתחות API ואחסון מאובטח.",
+            "en": "Manage API keys and secure storage."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מקרא",
+            "en": "Help / legend"
+          },
+          "desc": {
+            "he": "פתיחת המקרא וקיצורי המקלדת (המסך הזה).",
+            "en": "Open the legend and keyboard shortcuts (this screen)."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "חיוב חודשי",
+            "en": "Monthly spend"
+          },
+          "desc": {
+            "he": "הסכום שבסרגל הוא של החודש הנוכחי. לחיצה פותחת פירוט לפי מנוע, מצב וחודש, ותקרת תקציב להפעלה.",
+            "en": "The figure in the bar is this month's. Click for a breakdown by engine, mode and month, and a per-session budget cap."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "באטץ'",
+            "en": "Batch"
+          },
+          "desc": {
+            "he": "פעולה אחת על הרבה קבצים, הפלט לתיקייה שתבחר. לא נוגע בפרויקט הפתוח.",
+            "en": "One action over many files, output into a folder you pick. Never touches the open project."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מד זמן",
+            "en": "Time meter"
+          },
+          "desc": {
+            "he": "לומד כמה זמן לוקח לכל מנוע ומצב, ומציג הערכה וזמן שחלף בזמן ההרצה.",
+            "en": "Learns how long each engine and mode takes, and shows an estimate and the elapsed time while running."
+          }
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "סרגל כלים (ימין)",
+        "en": "Right toolbar"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "הזזה",
+            "en": "Move"
+          },
+          "desc": {
+            "he": "הזזת שכבה — גרור ליישור; חיצים לכוונון עדין.",
+            "en": "Move a layer — drag to align; arrow keys for fine nudges."
+          },
+          "icon": "move"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "ניווט",
+            "en": "Pan"
+          },
+          "desc": {
+            "he": "גרירת הקנבס לניווט.",
+            "en": "Drag the canvas to navigate."
+          },
+          "icon": "hand"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סימון אזור",
+            "en": "Select region"
+          },
+          "desc": {
+            "he": "סימון מלבן לאזור מילוי גנרטיבי.",
+            "en": "Draw a rectangle for the generative-fill region."
+          },
+          "icon": "rect"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מטה קסם",
+            "en": "Magic wand"
+          },
+          "desc": {
+            "he": "לחיצה בוחרת אזור לפי צבע בשכבה הפעילה; מחוון הסובלנות מכוונן את הבחירה בלייב; כפתור הסריקה מזהה סגמנטים (רקע/שיער/גוף/פנים/בגדים).",
+            "en": "Click selects by color on the active layer; the tolerance slider retunes the selection live; the scan button detects segments (background/hair/body/face/clothes)."
+          },
+          "icon": "wand"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "בחירת אלמנט",
+            "en": "Element select"
+          },
+          "desc": {
+            "he": "לחיצה על אובייקט בשכבה הפעילה בוחרת רק אותו (AI מקומי).",
+            "en": "Click an object on the active layer to select just it (local AI)."
+          },
+          "icon": "target"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מברשת מחיקה",
+            "en": "Erase brush"
+          },
+          "desc": {
+            "he": "מסמנים את מה שצריך להיעלם (הסימון מקווקו בקווים מוצלבים), ולוחצים ״מחק את המסומן״. המחיקה רצה במנוע שבחור בסרגל העליון — כל מנוע עריכה, חוץ מהאפסקיילר. ב-umage2 היא רצה תמיד ב-Sunburst, מודל העריכה המדויקת, ומה שכתוב בסרגל המחיקה הוא המודל שבאמת יעבוד. כל אזור נפרד נמחק במילוי גנרטיבי לשכבת פאץ׳ משלו. כשיש כמה אזורים אפשר לבחור: פאץ׳ לכל אזור (מדויק, שומר על המקור) או הרצה אחת על כל התמונה (זולה יותר, אבל עלולה לשנות דברים נוספים). המנוע מקבל תמיד עותק של התמונה עם האזורים צבועים — צורת המברשת אמורפית, והמנוע מקבל את המלבן שמכיל אותה, אז הצבע הוא מה שאומר לו מה בתוך המלבן להסיר. מנוע שמקבל מסכה מקבל גם אותה.",
+            "en": "Paint what should disappear (it shows cross-hatched), then press \"Erase marked\". It runs on the engine selected in the top bar — any editing engine except the upscaler. On umage2 it always runs on Sunburst, the precise-edit model; the erase bar names the model that will actually do the work. Each separate area is removed with generative fill into its own patch layer. With several areas you choose: a patch per area (precise, keeps the original) or one pass over the whole image (cheaper, but may change more). The engine is always shown a copy of the image with the areas painted in — the brush shape is amorphous and the engine receives its bounding rectangle, so the paint is what says which part of that box to clear. An engine that takes a mask gets one too."
+          },
+          "icon": "heal"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מחק שכבה",
+            "en": "Layer eraser"
+          },
+          "desc": {
+            "he": "מחיקת פיקסלים מהשכבה הפעילה (מציג רוחב וקשיות).",
+            "en": "Erase pixels from the active layer (shows width & hardness)."
+          },
+          "icon": "eraser"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סיכה",
+            "en": "Pin"
+          },
+          "desc": {
+            "he": "מניחים סיכה ממוספרת על הקנבס ונפתח שדה לכתוב מה לשנות בה (אפשר להשאיר ריק — העוזר ישאל). עוזר הפרומפטים רואה את הסיכות. במצב יצירה מחדש אפשר לתייג סיכה בפרומפט — כפתור 📍 או הקלדת @ — והיא נשלחת כקואורדינטות — ההרצה הופכת לעריכה נקודתית ולא לשחזור נאמן של התמונה. Esc מבטל סיכה שהונחה הרגע; לחיצה כפולה עורכת.",
+            "en": "Drop a numbered pin and a field opens to write what should change there (leave it empty and the assistant asks). The prompt assistant sees the pins. In recreate mode you can tag a pin in the prompt — the 📍 button or typing @ — and it is sent as coordinates — the run becomes a point edit rather than a faithful re-render. Esc removes a pin just placed; double-click to edit."
+          },
+          "icon": "pin"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "עוזר הפרומפטים",
+            "en": "Prompt assistant"
+          },
+          "desc": {
+            "he": "מגירת צ'אט נשלפת לניסוח פרומפטים — '⤵ השתמש בפרומפט' מזריק לתיבת היצירה (משתמש במפתח ה-OpenAI שלך).",
+            "en": "Pull-out chat drawer for crafting prompts — '⤵ Use prompt' fills the prompt box (uses your OpenAI key)."
+          }
+        },
+        {
+          "glyph": "⌀",
+          "label": {
+            "he": "רוחב מחק",
+            "en": "Eraser width"
+          },
+          "desc": {
+            "he": "מחוון רוחב המברשת (2–400px).",
+            "en": "Brush width slider (2–400px)."
+          }
+        },
+        {
+          "glyph": "%",
+          "label": {
+            "he": "קשיות",
+            "en": "Hardness"
+          },
+          "desc": {
+            "he": "קשיחות שוליים — 100% קצה חד, נמוך = נוצה רכה.",
+            "en": "Edge hardness — 100% hard, lower = soft feather."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "נקה סימון",
+            "en": "Clear selection"
+          },
+          "desc": {
+            "he": "ניקוי האזור המסומן (Esc).",
+            "en": "Clear the marked region (Esc)."
+          },
+          "icon": "clear-rect"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סובב נגד השעון",
+            "en": "Rotate CCW"
+          },
+          "desc": {
+            "he": "סיבוב הפריים 90° נגד כיוון השעון.",
+            "en": "Rotate the frame 90° counter-clockwise."
+          },
+          "icon": "rotate-ccw"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סובב עם השעון",
+            "en": "Rotate CW"
+          },
+          "desc": {
+            "he": "סיבוב הפריים 90° עם כיוון השעון.",
+            "en": "Rotate the frame 90° clockwise."
+          },
+          "icon": "rotate-cw"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "לפני / אחרי",
+            "en": "Before / after"
+          },
+          "desc": {
+            "he": "תצוגת השוואה בין המקור לתוצאה.",
+            "en": "Compare the original against the result."
+          },
+          "icon": "compare"
+        },
+        {
+          "glyph": "−",
+          "label": {
+            "he": "התרחק",
+            "en": "Zoom out"
+          },
+          "desc": {
+            "he": "הקטנת התצוגה.",
+            "en": "Zoom out."
+          }
+        },
+        {
+          "glyph": "+",
+          "label": {
+            "he": "התקרב",
+            "en": "Zoom in"
+          },
+          "desc": {
+            "he": "הגדלת התצוגה.",
+            "en": "Zoom in."
+          }
+        },
+        {
+          "glyph": "1:1",
+          "label": {
+            "he": "100%",
+            "en": "100%"
+          },
+          "desc": {
+            "he": "איפוס הזום ל-100%.",
+            "en": "Reset zoom to 100%."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סימון חופשי",
+            "en": "Free-hand mark"
+          },
+          "desc": {
+            "he": "מברשת לסימון אזור ביד חופשית, לצד סימון המלבן והמטה.",
+            "en": "A brush for marking a region by hand, beside the rectangle and the wand."
+          },
+          "icon": "brush"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "כתיבה על הקנבס",
+            "en": "Canvas markup"
+          },
+          "desc": {
+            "he": "חצים, צורות והערות מעל התמונה — להסבר למודל או לעצמך. לא נכנס לייצוא.",
+            "en": "Arrows, shapes and notes over the image — to explain to the model or to yourself. Not part of the export."
+          },
+          "icon": "text"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "רקע קנבס שקוף",
+            "en": "Transparent canvas"
+          },
+          "desc": {
+            "he": "מחליף את רקע הקנבס בין לבן לשקוף. שקוף מציג שח-מט, וייצוא PNG שומר את השקיפות.",
+            "en": "Switches the canvas background between white and transparent. Transparent shows a checkerboard, and a PNG export keeps it."
+          },
+          "icon": "checker"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סידור הסרגל",
+            "en": "Arrange the toolbar"
+          },
+          "desc": {
+            "he": "גרירה לשינוי סדר הכלים, והסתרה של מה שאינך משתמש בו.",
+            "en": "Drag to reorder the tools, and hide the ones you don't use."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מוזאיק",
+            "en": "Mosaic"
+          },
+          "desc": {
+            "he": "פורס את השכבות המסומנות זו לצד זו להשוואה. תצוגה זמנית, לא משנה את הפרויקט.",
+            "en": "Lays the selected layers side by side to compare. A temporary view; the project is unchanged."
+          },
+          "icon": "mosaic"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "ריערום",
+            "en": "Re-stack"
+          },
+          "desc": {
+            "he": "מסדר את כל השכבות במרכז הקנבס, זו על זו.",
+            "en": "Puts every layer back in the centre of the canvas, stacked."
+          },
+          "icon": "stack"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "חיווי גודל על הסימון",
+            "en": "Size readout on a selection"
+          },
+          "desc": {
+            "he": "סימון מלבני מציג את גודלו בפיקסלים תוך כדי הגרירה. המסגרת מתעבה והרזולוציה נכתבת רק כשהצלע הארוכה היא בדיוק 1024, 1536, 2048 או 3072 — בערך מוחלט, בלי טווח. סימון מלבני נשלח בדיוק כפי שצויר ובאותה רזולוציה, כך שהפאץ' חוזר 1:1, ונוצת השוליים מאופסת (ניתן לכוונן אותה על השכבה אחר כך).",
+            "en": "A rectangular selection shows its size in pixels as you drag. The frame thickens and names the resolution only when the long edge is exactly 1024, 1536, 2048 or 3072 — an absolute value, no range. A rectangle is sent exactly as drawn and at that resolution, so the patch returns 1:1, and edge feather starts at zero (tunable on the layer afterwards)."
+          }
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "פאנל שכבות",
+        "en": "Layers panel"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "הוסף שכבה",
+            "en": "Add layer"
+          },
+          "desc": {
+            "he": "הוספת תמונה כשכבה חדשה.",
+            "en": "Add an image as a new layer."
+          },
+          "icon": "plus"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "נראות",
+            "en": "Visibility"
+          },
+          "desc": {
+            "he": "הצגה/הסתרה של השכבה.",
+            "en": "Show / hide the layer."
+          },
+          "icon": "eye"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "נעילה",
+            "en": "Lock"
+          },
+          "desc": {
+            "he": "נעילת השכבה מעריכה.",
+            "en": "Lock the layer from editing."
+          },
+          "icon": "lock"
+        },
+        {
+          "glyph": "AI",
+          "label": {
+            "he": "תווית AI",
+            "en": "AI badge"
+          },
+          "desc": {
+            "he": "מסמן ששכבה נוצרה ע״י AI.",
+            "en": "Marks a layer that was AI-generated."
+          }
+        },
+        {
+          "glyph": "W×H px",
+          "label": {
+            "he": "מימדים",
+            "en": "Dimensions"
+          },
+          "desc": {
+            "he": "מימדי התמונה האמיתיים בפיקסלים.",
+            "en": "The layer's true pixel dimensions."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מצב מיזוג",
+            "en": "Blend mode"
+          },
+          "desc": {
+            "he": "בחירת אופן המיזוג עם השכבות שמתחת.",
+            "en": "How the layer blends with the layers below."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "אטימות",
+            "en": "Opacity"
+          },
+          "desc": {
+            "he": "מחוון שקיפות 0–100%.",
+            "en": "Opacity slider 0–100%."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "העלה",
+            "en": "Move up"
+          },
+          "desc": {
+            "he": "העלאת השכבה בסדר הערימה.",
+            "en": "Move the layer up in the stack."
+          },
+          "icon": "up"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "הורד",
+            "en": "Move down"
+          },
+          "desc": {
+            "he": "הורדת השכבה בסדר הערימה.",
+            "en": "Move the layer down in the stack."
+          },
+          "icon": "down"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "פרמטרי ג׳נרוט",
+            "en": "Generation recipe"
+          },
+          "desc": {
+            "he": "צפייה/החלה מחדש של פרומפט, מודל והגדרות (לשכבת AI).",
+            "en": "View / re-apply the prompt, model and settings (AI layers)."
+          },
+          "icon": "sliders"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "התאמת צבע",
+            "en": "Color adjust"
+          },
+          "desc": {
+            "he": "נפתח בתוך שורת השכבה: כוונון חי של צבע/נוצה למילוי — אוטומטי + ידני, לא הרסני.",
+            "en": "Expands inside the layer row: live color/feather tuning for a fill — auto + manual, non-destructive."
+          },
+          "icon": "droplet"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "שכפל",
+            "en": "Duplicate"
+          },
+          "desc": {
+            "he": "שכפול השכבה.",
+            "en": "Duplicate the layer."
+          },
+          "icon": "duplicate"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מזג למטה",
+            "en": "Merge down"
+          },
+          "desc": {
+            "he": "מיזוג השכבה לשכבה שמתחתיה.",
+            "en": "Merge the layer into the one below."
+          },
+          "icon": "merge-down"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "ייצא שכבה",
+            "en": "Export layer"
+          },
+          "desc": {
+            "he": "ייצוא השכבה כ-PNG.",
+            "en": "Export the layer as a PNG."
+          },
+          "icon": "export"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מחק",
+            "en": "Delete"
+          },
+          "desc": {
+            "he": "מחיקת השכבה.",
+            "en": "Delete the layer."
+          },
+          "icon": "trash"
+        },
+        {
+          "glyph": "שקוף",
+          "label": {
+            "he": "מחוון שקיפות",
+            "en": "Transparency chip"
+          },
+          "desc": {
+            "he": "השכבה כוללת רקע שקוף. אם הקנבס אטום הוא מסתיר את זה — החלף את רקע הקנבס לשקוף.",
+            "en": "This layer carries transparency. An opaque canvas hides that — switch the canvas background to transparent."
+          }
+        },
+        {
+          "glyph": "4K",
+          "label": {
+            "he": "הקטן ל-4K",
+            "en": "Downscale to 4K"
+          },
+          "desc": {
+            "he": "מופיע על שכבה גדולה מ-4096px, שעלולה להאט או להידחות במנועים.",
+            "en": "Appears on a layer over 4096px, which can slow engines down or be rejected by them."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "השטח",
+            "en": "Flatten"
+          },
+          "desc": {
+            "he": "מאחד את כל השכבות — לשכבה חדשה (שומר את המקור) או במקום הכל.",
+            "en": "Merges every layer — into a new one (keeping the originals) or replacing them all."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "התאם לקנבס",
+            "en": "Fit to canvas"
+          },
+          "desc": {
+            "he": "מקטין או ממלא את השכבה לגודל הקנבס בלי לעוות אותה.",
+            "en": "Scales the layer to contain or cover the canvas, without distorting it."
+          },
+          "icon": "expand"
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "פקדי יצירה",
+        "en": "Generation controls"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "פרומפט",
+            "en": "Prompt"
+          },
+          "desc": {
+            "he": "תיאור השינוי או התמונה ליצירה.",
+            "en": "Describe the change, or the image to generate."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "תמונות ייחוס",
+            "en": "Reference images"
+          },
+          "desc": {
+            "he": "הוספת תמונות ייחוס + תפקיד (סגנון/זהות/צבע…) למנועים שתומכים.",
+            "en": "Add reference images + a role (style/identity/color…) on engines that support it."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "תבניות מוכנות",
+            "en": "Presets"
+          },
+          "desc": {
+            "he": "פרומפטים מוכנים נפוצים.",
+            "en": "Common ready-made prompts."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "היסטוריה",
+            "en": "History"
+          },
+          "desc": {
+            "he": "פרומפטים אחרונים בפרויקט.",
+            "en": "Recent prompts in the project."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "הרץ",
+            "en": "Run"
+          },
+          "desc": {
+            "he": "הפעלת היצירה במצב הנוכחי (מציג \"מעבד…\").",
+            "en": "Run generation in the current mode (shows \"Processing…\")."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "גרירת תמונות",
+            "en": "Drag and drop"
+          },
+          "desc": {
+            "he": "אפשר לגרור קבצים ישר אל הקנבס, אל מדף הייחוס ואל הצ'אט.",
+            "en": "Files can be dragged straight onto the canvas, the reference shelf and the chat."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מדיום וסגנון",
+            "en": "Medium & style"
+          },
+          "desc": {
+            "he": "בוררים מהירים שמצטרפים לפרומפט — צילום, איור, תלת-ממד וכדומה.",
+            "en": "Quick pickers that join the prompt — photograph, illustration, 3D and so on."
+          }
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "פאנלים (כיווץ/נעיצה)",
+        "en": "Docks (collapse/pin)"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "כווץ/הצג שכבות",
+            "en": "Collapse/show layers"
+          },
+          "desc": {
+            "he": "כיווץ או הצגת פאנל השכבות.",
+            "en": "Collapse or show the layers panel."
+          },
+          "icon": "chevron"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "נעיצה",
+            "en": "Pin"
+          },
+          "desc": {
+            "he": "מעבר בין שליפה אוטומטית בריחוף לבין פאנל נעוץ.",
+            "en": "Toggle auto-hide-on-hover vs a pinned panel."
+          },
+          "icon": "dock-pin"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "כווץ/הצג פקדי יצירה",
+            "en": "Collapse/show prompt bar"
+          },
+          "desc": {
+            "he": "כיווץ או הצגת פס פקדי היצירה.",
+            "en": "Collapse or show the generation bar."
+          },
+          "icon": "chevron"
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "מסך פתיחה (גלריה)",
+        "en": "Start screen (gallery)"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "צור עם AI",
+            "en": "Create with AI"
+          },
+          "desc": {
+            "he": "התחלת פרויקט חדש מטקסט.",
+            "en": "Start a new project from text."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "פתח תמונה / פרויקט",
+            "en": "Open image / project"
+          },
+          "desc": {
+            "he": "פתיחת קובץ קיים.",
+            "en": "Open an existing file."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "עבודות אחרונות",
+            "en": "Recent works"
+          },
+          "desc": {
+            "he": "לחיצה על כרטיס פותחת פרויקט; ✕ מסיר מהרשימה.",
+            "en": "Click a card to open a project; ✕ removes it from the list."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "תמונה גדולה מ-4K",
+            "en": "Pictures over 4K"
+          },
+          "desc": {
+            "he": "כשפותחים תמונה גדולה (למשל 8000×5000) נשאלים: להקטין ל-4K, או לחתוך חתיכה ברזולוציה מלאה. בחיתוך בוחרים מלבן על התמונה המקורית — בגרירה, או בהקלדת גודל מדויק ובכפתורי 1K–4K — והחתיכה נפתחת כפרויקט. בסיום: ייצוא ← \"החזר לתמונה המקורית\" מניח אותה בתוך עותק של התמונה, בדיוק במקומה, עם מעבר רך בשוליים. או שמייצאים אותה כתמונה בפני עצמה.",
+            "en": "Opening a big picture (e.g. 8000×5000) asks: shrink it to 4K, or cut a full-resolution piece. To cut, pick a rectangle on the original — drag it, or type an exact size, or use the 1K–4K buttons — and the piece opens as a project. When done: Export → \"Back into the original\" lays it into a copy of the photo at its exact spot, with a soft seam. Or export it as a picture of its own."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "רשימת פרומפטים",
+            "en": "Prompt list"
+          },
+          "desc": {
+            "he": "תמונה לכל פרומפט, כל אחת בלשונית משלה. גוררים קובץ טקסט או מסמך Word לאפליקציה (או פותחים אותו ב„פתח”, או מדביקים ב„באטץ'” ← פרומפטים). פרומפט בכל פסקה — או בכל שורה. אופציונלי בתחילת פרומפט: [16:9] ליחס משלו ו-@קובץ.png לייחוס משלו מהתיקייה של קובץ הטקסט. המנוע, המודל, הרזולוציה ומדף הייחוס חלים על כולם. עוזר הפרומפטים יודע לכתוב רשימה כזאת — ולחיצה אחת פותחת אותה לריצה. במסמך עם כותרות: שורות קצרות הן כותרות (לא ירוצו), וכותרת שמעל פרומפט נותנת שם ללשונית שלו. פרומפט שכותב יחס (\"16:9\") מקבל אותו.",
+            "en": "An image per prompt, each in its own tab. Drop a text file or a Word document on the app (or open it with Open, or paste into Batch → Prompts). One prompt per paragraph — or per line. Optional at the start of a prompt: [16:9] for its own aspect and @file.png for its own reference, from the text file's folder. The engine, model, resolution and reference shelf apply to all. The prompt assistant can write such a list — one click opens it ready to run. In a document with headings, short lines are headings (they do not run), and a heading above a prompt names its tab. A prompt that names an aspect (\"16:9\") gets it."
+          }
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "דיאלוגים",
+        "en": "Dialogs"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "הגדרות / מפתחות",
+            "en": "Settings / keys"
+          },
+          "desc": {
+            "he": "בחירת ספק, הזנת מפתח API, אימות ושמירה/הסרה; מציג יכולות מנוע.",
+            "en": "Pick a provider, enter an API key, validate & save/remove; shows engine capabilities."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "פירוט הוצאות",
+            "en": "Spend breakdown"
+          },
+          "desc": {
+            "he": "סה״כ והפעלה + טבלה: מתי, פעולה, מנוע, מודל, עלות.",
+            "en": "Total & session + a table: when, action, engine, model, cost."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "משוב",
+            "en": "Feedback"
+          },
+          "desc": {
+            "he": "טקסט משוב + אימייל אופציונלי; נשלח עם גרסה ופלטפורמה.",
+            "en": "Feedback text + optional email; sent with version & platform."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "פרמטרי השכבה",
+            "en": "Layer recipe"
+          },
+          "desc": {
+            "he": "פעולה, מנוע, מודל, איכות, יחס, שמירות, עלות, פרומפט — והחלה/העתקה.",
+            "en": "Mode, engine, model, quality, ratio, preserves, cost, prompt — apply/copy."
+          }
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "עוזר הפרומפטים והסקילים",
+        "en": "Prompt assistant & skills"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "פאנל העוזר",
+            "en": "Assistant panel"
+          },
+          "desc": {
+            "he": "שיחה עם מודל שפה לניסוח פרומפטים. אפשר להרחיב אותו על כל רוחב הקנבס.",
+            "en": "A conversation with a language model for writing prompts. Can expand across the whole canvas."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "לשוניות שיחה",
+            "en": "Chat tabs"
+          },
+          "desc": {
+            "he": "כמה שיחות במקביל — אחת לכל נושא, בלי לאבד את הקודמת.",
+            "en": "Several conversations at once — one per topic, without losing the previous."
+          },
+          "icon": "plus"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "בורר מנוע ומודל",
+            "en": "Engine & model picker"
+          },
+          "desc": {
+            "he": "GPT / Gemini / Grok / Claude — העוזר לא קשור למנוע התמונות.",
+            "en": "GPT / Gemini / Grok / Claude — the assistant is independent of the image engine."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "סקיל",
+            "en": "Skill"
+          },
+          "desc": {
+            "he": "תהליך מרובה שלבים: שאלות, בחירות, תמונות ושלבי AI שמצטרפים לפרומפט אחד.",
+            "en": "A multi-step workflow: questions, choices, images and AI stages that add up to one prompt."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "דף דמות",
+            "en": "Character sheet"
+          },
+          "desc": {
+            "he": "סקיל מובנה — בונה דף דמות מתמונות של אדם, כולל רפרנס לבוש ופוזת אקשן.",
+            "en": "A built-in skill — builds a character sheet from photos of a person, with a wardrobe reference and an action pose."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "מתכנן סקילים",
+            "en": "Skill planner"
+          },
+          "desc": {
+            "he": "מתאר במילים מה הסקיל צריך לעשות, והמתכנן בונה אותו. אפשר לערוך לפני שמירה.",
+            "en": "Describe in words what the skill should do and the planner builds it. Editable before saving."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "חזרה שלב אחורה",
+            "en": "Step back"
+          },
+          "desc": {
+            "he": "חוזר לשלב קודם בסקיל בלי להתחיל את כל התהליך מחדש.",
+            "en": "Go back a step inside a skill without restarting the whole workflow."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "ייצוא JSON",
+            "en": "Export JSON"
+          },
+          "desc": {
+            "he": "שומר סקיל או מהלך שלם כקובץ JSON, לשיתוף או לגיבוי.",
+            "en": "Saves a skill, or a whole run, as JSON — to share or to keep."
+          },
+          "icon": "export"
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "הסתכלות על הקנבס",
+            "en": "Reads the canvas"
+          },
+          "desc": {
+            "he": "אזור מסומן והתמונה כולה נשלחים לעוזר כברירת מחדל, בלי לצרף ידנית.",
+            "en": "A marked region and the whole image go to the assistant by default, with nothing to attach by hand."
+          },
+          "icon": "eye"
+        }
+      ]
+    },
+    {
+      "area": {
+        "he": "לשוניות ועבודה במקביל",
+        "en": "Tabs & working in parallel"
+      },
+      "items": [
+        {
+          "glyph": "",
+          "label": {
+            "he": "לשונית חדשה",
+            "en": "New tab"
+          },
+          "desc": {
+            "he": "פרויקט נוסף לצד הפתוח. כל לשונית שומרת היסטוריה, מסכה והגדרות משלה.",
+            "en": "Another project beside the open one. Each tab keeps its own history, mask and settings."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "פתח תמונות",
+            "en": "Open images"
+          },
+          "desc": {
+            "he": "עד 10 קבצים בבת אחת — כלשוניות נפרדות או כשכבות בפרויקט אחד.",
+            "en": "Up to 10 files at once — as separate tabs, or as layers in one project."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "הרץ הכל",
+            "en": "Run all"
+          },
+          "desc": {
+            "he": "מריץ את כל הלשוניות, שתיים במקביל. בוחרים אם להשתמש בהגדרות הלשונית הפתוחה או בהגדרות של כל אחת; לשונית שאין לה מה להריץ מדולגת.",
+            "en": "Runs every tab, two at a time. Choose the open tab's settings for all, or each tab's own; a tab with nothing to run is skipped."
+          }
+        },
+        {
+          "glyph": "",
+          "label": {
+            "he": "שמור הכל",
+            "en": "Save all"
+          },
+          "desc": {
+            "he": "שומר את הקנבס של כל הלשוניות לתיקייה אחת, כל אחת בשם שבו נפתחה.",
+            "en": "Writes every tab's canvas into one folder, each under the name it was opened with."
+          }
+        },
+        {
+          "glyph": "●",
+          "label": {
+            "he": "נקודה בלשונית",
+            "en": "Tab dot"
+          },
+          "desc": {
+            "he": "הלשונית מייצרת עכשיו. „חדש” = תוצאה הגיעה בזמן שהיית במקום אחר, „נכשל” = ההרצה נכשלה.",
+            "en": "That tab is rendering. “New” = a result arrived while you were elsewhere, “Failed” = its run failed."
+          }
+        }
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "label": {
+        "he": "אפסקייל",
+        "en": "Upscale"
+      },
+      "desc": {
+        "he": "הגדלת רזולוציה תוך שמירה על קומפוזיציה, צבעים וזהות.",
+        "en": "Increase resolution while preserving composition, color and identity."
+      }
+    },
+    {
+      "label": {
+        "he": "יצירה מחדש",
+        "en": "Recreate"
+      },
+      "desc": {
+        "he": "יצירה מחדש של התמונה בנאמנות גבוהה יותר.",
+        "en": "Recreate the image at higher fidelity."
+      }
+    },
+    {
+      "label": {
+        "he": "מילוי גנרטיבי",
+        "en": "Generative fill"
+      },
+      "desc": {
+        "he": "עריכה רק באזור שסומן, ממוזגת חלק לסביבה.",
+        "en": "Edit only the marked region, blended seamlessly."
+      }
+    },
+    {
+      "label": {
+        "he": "שינוי פורמט",
+        "en": "Reformat"
+      },
+      "desc": {
+        "he": "שינוי יחס צלעות — בוחרים יחס יעד והפריים גדל אליו גנרטיבית (בלי חיתוך); התוצאה היא שכבה שלמה אחת מעל, כשהמרכז המקורי נשמר.",
+        "en": "Change the aspect ratio — pick a target ratio and the frame grows to it generatively (no crop); the result is one whole layer on top with the original center preserved."
+      }
+    },
+    {
+      "label": {
+        "he": "יצירה",
+        "en": "Generate"
+      },
+      "desc": {
+        "he": "טקסט-לתמונה ללא קלט.",
+        "en": "Text-to-image from scratch."
+      }
+    },
+    {
+      "label": {
+        "he": "הסרת רקע",
+        "en": "Remove background"
+      },
+      "desc": {
+        "he": "מחזיר את הנושא על רקע שקוף אמיתי (ערוץ אלפא), והקנבס עובר לשקוף כדי שתראה את זה. המנוע מצייר את הנושא מחדש ולא גוזר אותו — טקסט, לוגו ופרטים דקים עשויים להשתנות מעט.",
+        "en": "Returns the subject on real transparency (an alpha channel), and switches the canvas to transparent so you can see it. The engine redraws the subject rather than cutting it out — text, logos and fine detail may shift slightly."
+      }
+    }
+  ],
+  "engineOptions": [
+    {
+      "label": {
+        "he": "יחס צלעות",
+        "en": "Aspect ratio"
+      },
+      "desc": {
+        "he": "יחס הפלט (כמו המקור / 1:1 / 16:9 / …).",
+        "en": "Output ratio (like source / 1:1 / 16:9 / …)."
+      }
+    },
+    {
+      "label": {
+        "he": "יחס תוצאה",
+        "en": "Result aspect"
+      },
+      "desc": {
+        "he": "התאם למקור (חיתוך עדין, בלי מתיחה) או כפי שהמנוע מחזיר.",
+        "en": "Conform to source (gentle crop, no stretch) or keep the engine's output."
+      }
+    },
+    {
+      "label": {
+        "he": "יישר לשכבת המקור",
+        "en": "Align to source"
+      },
+      "desc": {
+        "he": "מצמיד את התוצאה בול על שכבת המקור (אפסקייל/מילוי).",
+        "en": "Snaps the result exactly onto the source layer (upscale/fill)."
+      }
+    },
+    {
+      "label": {
+        "he": "רזולוציה",
+        "en": "Resolution"
+      },
+      "desc": {
+        "he": "רזולוציית הפלט לפי המנוע (למשל Reve: 1K/2K/4K).",
+        "en": "Output resolution per engine (e.g. Reve: 1K/2K/4K)."
+      }
+    },
+    {
+      "label": {
+        "he": "רזולוציית אזור",
+        "en": "Region resolution"
+      },
+      "desc": {
+        "he": "רזולוציית העבודה של אזור המילוי (1K–3K).",
+        "en": "Working resolution of the fill region (1K–3K)."
+      }
+    },
+    {
+      "label": {
+        "he": "איכות",
+        "en": "Quality"
+      },
+      "desc": {
+        "he": "רמת פירוט ועלות (נמוכה/בינונית/גבוהה/אוטו׳) — לא רזולוציה. ב-GPT Image 2.5 נוספות שתי דרגות מעל גבוהה: גבוהה מאוד ומקסימלית.",
+        "en": "Detail level & cost (low/med/high/auto) — not resolution. GPT Image 2.5 adds two steps above high: xhigh and max."
+      }
+    },
+    {
+      "label": {
+        "he": "שמור צבעים/גאומטריה/זהות",
+        "en": "Preserve color/geometry/identity"
+      },
+      "desc": {
+        "he": "מנחה את המנוע לשמר היבטים אלה בעריכה.",
+        "en": "Hints the engine to preserve these in edits."
+      }
+    },
+    {
+      "label": {
+        "he": "רזולוציה (לפי מצב)",
+        "en": "Resolution (per mode)"
+      },
+      "desc": {
+        "he": "כל מצב זוכר את הרזולוציה שלו: יצירה, יצירה מחדש, אפסקייל, הסרת רקע ושינוי פורמט. 'כמו המקור' שומר על גודל התמונה הנוכחית.",
+        "en": "Each mode keeps its own: generate, recreate, upscale, remove-background and reformat. \"Like source\" keeps the current image's size."
+      }
+    },
+    {
+      "label": {
+        "he": "רקע שקוף",
+        "en": "Transparent background"
+      },
+      "desc": {
+        "he": "מבקש PNG עם ערוץ אלפא במקום רקע לבן לחיתוך. משפיע על היצירה עצמה — התאורה והצללים יוצאים שונים מאותו פרומפט על רקע אטום. זמין ב-GPT Image 2.5 וב-gpt-image-2.",
+        "en": "Asks for a PNG with an alpha channel instead of a white plate to cut out. It steers the generation itself — lighting and shadows differ from the same prompt on an opaque background. Available on GPT Image 2.5 and gpt-image-2."
+      }
+    },
+    {
+      "label": {
+        "he": "חיווי גודל הפלט",
+        "en": "Predicted output size"
+      },
+      "desc": {
+        "he": "מציג את הגודל שיחזור בפועל לפני ההרצה. GPT Image 2.5 ו-2 מוגבלים ל-8.29 מגה-פיקסל, ולכן בקשה ל-4K ביחס 1:1 חוזרת כ-2880×2880.",
+        "en": "Shows the size that will actually come back, before you spend. GPT Image 2.5 and 2 are capped at 8.29 megapixels, so a 1:1 \\\"4K\\\" returns 2880×2880."
+      }
+    },
+    {
+      "label": {
+        "he": "וריאציות",
+        "en": "Variations"
+      },
+      "desc": {
+        "he": "1–3 מועמדות במכה אחת, כל אחת נפתחת כשכבה נפרדת. כל אחת מחויבת בנפרד.",
+        "en": "1–3 candidates in one go, each arriving as its own layer. Each is billed separately."
+      }
+    }
+  ],
+  "blendModes": [
+    {
+      "label": {
+        "he": "רגיל",
+        "en": "Normal"
+      }
+    },
+    {
+      "label": {
+        "he": "הכפלה",
+        "en": "Multiply"
+      }
+    },
+    {
+      "label": {
+        "he": "מסך",
+        "en": "Screen"
+      }
+    },
+    {
+      "label": {
+        "he": "כיסוי",
+        "en": "Overlay"
+      }
+    },
+    {
+      "label": {
+        "he": "אור רך",
+        "en": "Soft light"
+      }
+    },
+    {
+      "label": {
+        "he": "הפרש",
+        "en": "Difference"
+      }
+    },
+    {
+      "label": {
+        "he": "צבע",
+        "en": "Color"
+      }
+    },
+    {
+      "label": {
+        "he": "בהירות",
+        "en": "Luminosity"
+      }
+    }
+  ],
+  "refRoles": [
+    {
+      "label": {
+        "he": "לפי הפרומפט",
+        "en": "As the prompt says"
+      },
+      "desc": {
+        "he": "ברירת המחדל. התמונה משמשת כפי שהפרומפט מתאר, והמנוע יודע שהיא ייחוס ולא התמונה שצריך להחזיר.",
+        "en": "The default. The image is used as the prompt describes, and the engine is told it is a reference, not the picture to return."
+      }
+    },
+    {
+      "label": {
+        "he": "סגנון",
+        "en": "Style"
+      },
+      "desc": {
+        "he": "נלקחים הצבעים, המראה והאווירה. התוכן, הטקסט והפריסה לא מועתקים.",
+        "en": "Takes colours, look and mood. The content, text and layout are not copied."
+      }
+    },
+    {
+      "label": {
+        "he": "טיפוגרפיה",
+        "en": "Typography"
+      },
+      "desc": {
+        "he": "נלקח סגנון האותיות — פונט, משקל, פרופורציות וצבע. המילים והפריסה לא מועתקות. מתאים לתרגום שקפים בשמירה על הכתב.",
+        "en": "Takes the lettering style — typeface, weight, proportions, colour. The words and layout are not copied. Made for translating slides while keeping the lettering."
+      }
+    },
+    {
+      "label": {
+        "he": "דמות",
+        "en": "Character"
+      },
+      "desc": {
+        "he": "אותה דמות: הפנים והתווים נשמרים. התנוחה, הבגדים והרקע לא מועתקים.",
+        "en": "The same person: face and features are kept. Pose, clothes and background are not copied."
+      }
+    },
+    {
+      "label": {
+        "he": "אובייקט / לוגו",
+        "en": "Object / logo"
+      },
+      "desc": {
+        "he": "האובייקט או הלוגו עצמו, בנאמנות. הרקע שסביבו לא מועתק.",
+        "en": "The object or logo itself, faithfully. Its background is not copied."
+      }
+    },
+    {
+      "label": {
+        "he": "קומפוזיציה",
+        "en": "Composition"
+      },
+      "desc": {
+        "he": "נלקחים הפריסה, המסגור והתנוחה. התוכן, הצבעים והסגנון לא מועתקים.",
+        "en": "Takes layout, framing and pose. Content, colours and style are not copied."
+      }
+    }
+  ],
+  "shortcuts": [
+    {
+      "keys": "⌘/Ctrl + Z",
+      "action": {
+        "he": "בטל",
+        "en": "Undo"
+      }
+    },
+    {
+      "keys": "⇧⌘/Ctrl+Shift + Z",
+      "action": {
+        "he": "שחזר",
+        "en": "Redo"
+      }
+    },
+    {
+      "keys": "⌘/Ctrl + Y",
+      "action": {
+        "he": "שחזר (חלופי)",
+        "en": "Redo (alternate)"
+      }
+    },
+    {
+      "keys": "⌘/Ctrl + S",
+      "action": {
+        "he": "שמור פרויקט",
+        "en": "Save project"
+      }
+    },
+    {
+      "keys": "Esc",
+      "action": {
+        "he": "סגור תפריט או דיאלוג · על הקנבס — נקה את האזור המסומן",
+        "en": "Close a menu or dialog · on the canvas — clear the marked region"
+      }
+    },
+    {
+      "keys": "[ / ]",
+      "action": {
+        "he": "הקטן / הגדל את המברשת שביד (סימון, מחיקה או ציור חופשי)",
+        "en": "Smaller / larger brush, for whichever is in hand (mark, erase or markup)"
+      }
+    },
+    {
+      "keys": "⌫ Backspace",
+      "action": {
+        "he": "מחק את האזור המסומן מהשכבה הפעילה",
+        "en": "Delete the selected region from the active layer"
+      }
+    },
+    {
+      "keys": "⌘/Ctrl + Enter",
+      "action": {
+        "he": "הרץ את היצירה הנוכחית",
+        "en": "Run the current generation"
+      }
+    },
+    {
+      "keys": "1 / 2 / 3 / 4",
+      "action": {
+        "he": "מעבר בין מצבים: אפסקייל / יצירה מחדש / מילוי / יצירה",
+        "en": "Switch modes: upscale / recreate / fill / generate"
+      }
+    },
+    {
+      "keys": "← ↑ → ↓",
+      "action": {
+        "he": "הזז שכבה פעילה 1px (כלי הזזה)",
+        "en": "Nudge active layer 1px (Move tool)"
+      }
+    },
+    {
+      "keys": "⇧ + ← ↑ → ↓",
+      "action": {
+        "he": "הזז שכבה פעילה 10px",
+        "en": "Nudge active layer 10px"
+      }
+    },
+    {
+      "keys": "Backspace",
+      "action": {
+        "he": "מחק את האזור המסומן",
+        "en": "Erase the marked region"
+      }
+    }
+  ]
+}

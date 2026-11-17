@@ -1,0 +1,12 @@
+name = "mbrush-activation"
+main = "src/worker.js"
+compatibility_date = "2024-11-01"
+
+# Create the namespace with:  npx wrangler kv namespace create CODES
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "CODES"
+id = "475484455a4844a5a487454945bd701a"
+
+# Secret (do NOT put here) — set with:
+#   npx wrangler secret put SIGN_KEY_PKCS8_B64

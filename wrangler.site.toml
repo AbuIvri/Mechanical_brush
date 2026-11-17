@@ -1,0 +1,8 @@
+# Deploys the static marketing site (website/) to the existing "mbrush-site" Worker.
+# Update the live site anytime with:  npx wrangler deploy -c wrangler.site.toml
+name = "mbrush-site"
+compatibility_date = "2024-09-23"
+
+[assets]
+directory = "./website"
+not_found_handling = "404-page"

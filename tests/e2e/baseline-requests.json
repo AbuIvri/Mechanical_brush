@@ -1,0 +1,304 @@
+{
+  "modes": [
+    {
+      "mode": "upscale",
+      "requests": [
+        {
+          "mode": "upscale",
+          "providerId": "umage2",
+          "modelId": "gpt-image-2.5-flare",
+          "prompt": "",
+          "refs": 0,
+          "hasMask": false,
+          "settings": {
+            "quality": "high",
+            "preserveGeometry": true,
+            "preserveColor": true,
+            "outputWidth": 3840,
+            "outputHeight": 2400
+          },
+          "imageSize": [
+            1600,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "recreate",
+      "requests": [
+        {
+          "mode": "recreate",
+          "providerId": "umage2",
+          "modelId": "gpt-image-2.5-flare",
+          "prompt": "make it evening",
+          "refs": 0,
+          "hasMask": false,
+          "settings": {
+            "quality": "high",
+            "preserveGeometry": true,
+            "preserveColor": true,
+            "outputWidth": 1600,
+            "outputHeight": 1000
+          },
+          "imageSize": [
+            1600,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "generate",
+      "requests": [
+        {
+          "mode": "generate",
+          "providerId": "umage2",
+          "modelId": "gpt-image-2.5-flare",
+          "prompt": "a red ball on grass",
+          "refs": 0,
+          "hasMask": false,
+          "settings": {
+            "quality": "high",
+            "preserveGeometry": true,
+            "preserveColor": true
+          },
+          "imageSize": [
+            1600,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "removebg",
+      "requests": [
+        {
+          "mode": "removebg",
+          "providerId": "umage2",
+          "modelId": "gpt-image-2.5-flare",
+          "prompt": "",
+          "refs": 0,
+          "hasMask": false,
+          "settings": {
+            "quality": "high",
+            "preserveGeometry": true,
+            "preserveColor": true,
+            "transparentBackground": true,
+            "preserveIdentity": true,
+            "outputWidth": 1600,
+            "outputHeight": 1000
+          },
+          "imageSize": [
+            1600,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "fill",
+      "requests": [
+        {
+          "mode": "fill",
+          "providerId": "umage2",
+          "modelId": "gpt-image-2.5-flare",
+          "prompt": "a round window",
+          "refs": 1,
+          "hasMask": false,
+          "settings": {
+            "quality": "high",
+            "preserveGeometry": true,
+            "preserveColor": true,
+            "outputWidth": 1056,
+            "outputHeight": 704
+          },
+          "imageSize": [
+            1056,
+            704
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "expand",
+      "requests": [
+        {
+          "mode": "expand",
+          "providerId": "umage2",
+          "modelId": "gpt-image-2.5-flare",
+          "prompt": "",
+          "refs": 1,
+          "hasMask": false,
+          "settings": {
+            "quality": "high",
+            "preserveGeometry": true,
+            "preserveColor": true,
+            "expandDir": "right",
+            "expandAmount": 25,
+            "outputWidth": 592,
+            "outputHeight": 1104
+          },
+          "imageSize": [
+            592,
+            1104
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "ratio",
+      "requests": [
+        {
+          "mode": "ratio",
+          "providerId": "umage2",
+          "modelId": "gpt-image-2.5-flare",
+          "prompt": "",
+          "refs": 1,
+          "hasMask": true,
+          "settings": {
+            "quality": "high",
+            "preserveGeometry": true,
+            "preserveColor": true,
+            "ratioTarget": "1:1",
+            "outputWidth": 1600,
+            "outputHeight": 1600
+          },
+          "imageSize": [
+            1600,
+            1600
+          ]
+        }
+      ]
+    }
+  ],
+  "erase": {
+    "perArea": [
+      {
+        "mode": "fill",
+        "providerId": "umage2",
+        "modelId": "gpt-image-2.5-sunburst",
+        "prompt": "remove whatever is painted over in red-orange in the second image — the same crop with the area marked — completely, and rebuild what was behind it so the background, lines, textures and lighting continue naturally. Return the first image edited, with no red-orange paint anywhere and nothing new in its place. Match the surrounding colour, brightness, contrast, grain and texture exactly, so the edit is invisible: no colour shift, no patch, no box edges, no seam",
+        "refs": 2,
+        "hasMask": true,
+        "settings": {
+          "quality": "high",
+          "preserveGeometry": true,
+          "preserveColor": true,
+          "outputWidth": 1024,
+          "outputHeight": 848
+        },
+        "imageSize": [
+          1024,
+          848
+        ]
+      },
+      {
+        "mode": "fill",
+        "providerId": "umage2",
+        "modelId": "gpt-image-2.5-sunburst",
+        "prompt": "remove whatever is painted over in red-orange in the second image — the same crop with the area marked — completely, and rebuild what was behind it so the background, lines, textures and lighting continue naturally. Return the first image edited, with no red-orange paint anywhere and nothing new in its place. Match the surrounding colour, brightness, contrast, grain and texture exactly, so the edit is invisible: no colour shift, no patch, no box edges, no seam",
+        "refs": 2,
+        "hasMask": true,
+        "settings": {
+          "quality": "high",
+          "preserveGeometry": true,
+          "preserveColor": true,
+          "outputWidth": 1024,
+          "outputHeight": 784
+        },
+        "imageSize": [
+          1024,
+          784
+        ]
+      }
+    ],
+    "whole": [
+      {
+        "mode": "recreate",
+        "providerId": "umage2",
+        "modelId": "gpt-image-2.5-sunburst",
+        "prompt": "",
+        "refs": 1,
+        "hasMask": true,
+        "settings": {
+          "quality": "high",
+          "preserveGeometry": true,
+          "preserveColor": true,
+          "eraseObjects": true,
+          "preserveIdentity": true,
+          "outputWidth": 1600,
+          "outputHeight": 1000
+        },
+        "imageSize": [
+          1600,
+          1000
+        ]
+      }
+    ]
+  },
+  "pins": [
+    {
+      "mode": "recreate",
+      "providerId": "umage2",
+      "modelId": "gpt-image-2.5-flare",
+      "prompt": "pin 1 (x: 50%, y: 50%) make it red\nPin coordinates are percentages of the image width and height, measured from the top-left corner. Apply each change only at its pin and leave the rest of the image unchanged.",
+      "refs": 0,
+      "hasMask": false,
+      "settings": {
+        "quality": "high",
+        "preserveGeometry": true,
+        "preserveColor": true,
+        "pinEdit": true,
+        "outputWidth": 1600,
+        "outputHeight": 1000
+      },
+      "imageSize": [
+        1600,
+        1000
+      ]
+    }
+  ],
+  "promptList": [
+    {
+      "mode": "generate",
+      "providerId": "umage2",
+      "modelId": "gpt-image-2.5-flare",
+      "prompt": "A billboard above a desert highway, dusk",
+      "refs": 0,
+      "hasMask": false,
+      "settings": {
+        "quality": "high",
+        "preserveGeometry": true,
+        "preserveColor": true
+      }
+    },
+    {
+      "mode": "generate",
+      "providerId": "umage2",
+      "modelId": "gpt-image-2.5-flare",
+      "prompt": "A red sneaker on wet asphalt, night city lights",
+      "refs": 0,
+      "hasMask": false,
+      "settings": {
+        "quality": "high",
+        "preserveGeometry": true,
+        "preserveColor": true
+      }
+    },
+    {
+      "mode": "generate",
+      "providerId": "umage2",
+      "modelId": "gpt-image-2.5-flare",
+      "prompt": "The same sneaker on a white studio sweep",
+      "refs": 0,
+      "hasMask": false,
+      "settings": {
+        "quality": "high",
+        "preserveGeometry": true,
+        "preserveColor": true,
+        "aspectRatio": "16:9"
+      }
+    }
+  ]
+}

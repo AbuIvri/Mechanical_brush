@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>אייקון — שלושה כיוונים</title>
+<style>
+  @font-face { font-family: "David Libre"; font-weight: 700; src: url("../../node_modules/@fontsource/david-libre/files/david-libre-hebrew-700-normal.woff2") format("woff2"); }
+  @font-face { font-family: "IBM Plex Sans Hebrew"; font-weight: 400; src: url("../../node_modules/@fontsource/ibm-plex-sans-hebrew/files/ibm-plex-sans-hebrew-hebrew-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: "IBM Plex Sans Hebrew"; font-weight: 500; src: url("../../node_modules/@fontsource/ibm-plex-sans-hebrew/files/ibm-plex-sans-hebrew-hebrew-500-normal.woff2") format("woff2"); }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 400; src: url("../../node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
+  :root { --well:#121212; --s900:#1b1b1b; --s800:#242424; --s700:#333; --s500:#6f6f6c; --s400:#8b8b88; --s300:#a3a3a0; --s200:#d9d9d6; --s100:#f3f3f0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--s900); color: var(--s200); font: 400 13px/20px "IBM Plex Sans Hebrew", sans-serif; width: 1600px; }
+  .sheet { padding: 40px 48px 48px; }
+  h1 { margin: 0 0 4px; font: 700 26px/32px "David Libre", serif; color: var(--s100); }
+  .lead { margin: 0 0 28px; color: var(--s400); max-width: 1100px; }
+  .row { display: grid; grid-template-columns: 300px 1fr; gap: 32px; padding: 28px 0; border-top: 1px solid var(--s700); }
+  .name { font: 500 15px/22px "IBM Plex Sans Hebrew"; color: var(--s100); margin-bottom: 6px; }
+  .name b { font-family: "IBM Plex Mono"; font-weight: 400; color: var(--s400); margin-inline-start: 6px; }
+  .why { color: var(--s300); }
+  .why p { margin: 0 0 8px; }
+  .sizes { display: flex; align-items: flex-end; gap: 36px; direction: ltr; padding: 20px 24px; background: #5a5a5a; width: max-content; }
+  .size { display: grid; justify-items: center; gap: 8px; }
+  .size small { font: 400 11px/16px "IBM Plex Mono"; color: #e0e0e0; }
+  .docks { display: flex; gap: 24px; margin-top: 22px; direction: ltr; }
+  .dock { display: flex; align-items: center; gap: 10px; padding: 8px 12px; }
+  .dock.light { background: #dcdcdc; }
+  .dock.dark { background: #2b2b2b; }
+  .dock small { font: 400 11px/16px "IBM Plex Mono"; margin-inline-start: 8px; }
+  .dock.light small { color: #555; } .dock.dark small { color: var(--s400); }
+  .ph { width: 48px; height: 48px; }
+  .now { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--s700); display: flex; gap: 20px; align-items: center; color: var(--s400); }
+  .now img { width: 64px; height: 64px; }
+  svg { display: block; }
+  /* Narrow windows (a preview pane): one column, sizes wrap. */
+  @media (max-width: 1100px) {
+    body { width: auto; }
+    .sheet { padding: 24px 16px; }
+    .row { grid-template-columns: 1fr; gap: 16px; }
+    .sizes { width: auto; flex-wrap: wrap; gap: 20px; }
+    .docks { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h1>אייקון האפליקציה: שלושה כיוונים</h1>
+  <p class="lead">כל כיוון בנוי רק ממה שכבר קיים במערכת: המשיכה הרטובה כפי שהיא ב-ink.css, אות ה-hand, ואיור המכחול-קטר. מוצג בגדלים שבהם רואים אייקון בפועל, ובשורת Dock בהירה וכהה לצד אייקונים אחרים (מלבנים אפורים, בכוונה בלי מותגים אמיתיים). הצורה החיצונית היא תבנית האייקון של macOS; זו הצורה היחידה במערכת שאינה ישרה, כי מערכת ההפעלה מחייבת אותה.</p>
+
+  <div class="row" data-dir="A">
+    <div>
+      <div class="name">א. המשיכה <b>A</b></div>
+      <div class="why">
+        <p>משיכה רטובה אחת על פלדה כהה, בלי אות ובלי ציור. הסימן של המוצר, לבד.</p>
+        <p>בעד: הכי פשוט, נקרא היטב גם ב-16. נגד: לא אומר "מכחול מכני" למי שעוד לא מכיר את המוצר.</p>
+      </div>
+    </div>
+    <div><div class="sizes"></div><div class="docks"></div></div>
+  </div>
+
+  <div class="row" data-dir="B">
+    <div>
+      <div class="name">ב. האות מ׳ <b>B</b></div>
+      <div class="why">
+        <p>מ׳ באות ה-hand על כתם דיו, כמו המספר על סיכה בקנבס. הקול של האדם על הסימן של המוצר.</p>
+        <p>בעד: עברי, ייחודי במעגן, נשאר קריא בגדלים קטנים. נגד: אות בודדת היא בחירה טיפוגרפית ולא ציור; פחות מסביר מה האפליקציה עושה.</p>
+      </div>
+    </div>
+    <div><div class="sizes"></div><div class="docks"></div></div>
+  </div>
+
+  <div class="row" data-dir="C">
+    <div>
+      <div class="name">ג. המכחול-קטר <b>C</b></div>
+      <div class="why">
+        <p>צללית בקו פלדה של האיור שהחלטת לשמור: מכחול ענק על שלדת קטר, ומשיכה יבשה בתור הדרך.</p>
+        <p>בעד: מספר את הסיפור של השם, ומחבר לאיור באתר ובמסך הפתיחה. נגד: הרבה פרטים; ב-32 ומטה הקו מתפרק, וסביר שיידרש גרסה מופשטת יותר לגדלים הקטנים.</p>
+      </div>
+    </div>
+    <div><div class="sizes"></div><div class="docks"></div></div>
+  </div>
+
+  <div class="now"><img src="../../build/icon.png" alt=""><span>האייקון הנוכחי, להשוואה. לפי מערכת העיצוב הוא אינו חלק מהשפה: תלת-ממד, צבעי עץ ומתכת, גלגל שיניים.</span></div>
+</div>
+
+<!-- The wet and dry strokes: the same paths, filters and seeds as ink.css. -->
+<template id="wet"><svg viewBox="0 0 200 60" preserveAspectRatio="none"><filter id="fw" x="-10%" y="-30%" width="120%" height="160%"><feTurbulence type="fractalNoise" baseFrequency="0.02 0.26" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="10" xChannelSelector="R" yChannelSelector="G"/></filter><path filter="url(#fw)" fill="#e96a1b" d="M7 15C58 5 150 7 194 15C199 28 197 44 191 50C140 57 52 55 9 48C3 37 3 25 7 15Z"/></svg></template>
+<template id="dry"><svg viewBox="0 0 200 60" preserveAspectRatio="none"><filter id="fd" x="-10%" y="-30%" width="120%" height="160%"><feTurbulence type="fractalNoise" baseFrequency="0.02 0.3" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="11" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.008 0.7" numOctaves="1" seed="19" result="s"/><feColorMatrix in="s" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11 0 0 0 7.1" result="m"/><feComposite in="d" in2="m" operator="in"/></filter><path filter="url(#fd)" fill="#e96a1b" d="M7 15C58 5 150 7 194 15C199 28 197 44 191 50C140 57 52 55 9 48C3 37 3 25 7 15Z"/></svg></template>
+
+<script>
+const SQ = '<rect x="100" y="100" width="824" height="824" rx="185" fill="#1b1b1b"/>';
+const stroke = (kind, x, y, w, h) => {
+  const t = document.getElementById(kind).innerHTML.replace("<svg ", `<svg x="${x}" y="${y}" width="${w}" height="${h}" `);
+  return t;
+};
+const ICONS = {
+  A: () => SQ + `<g transform="rotate(-12 512 512)">${stroke("wet", 170, 392, 684, 240)}</g>`,
+  B: () => SQ + `<g transform="rotate(-6 512 512)">${stroke("wet", 196, 330, 632, 370)}</g>` +
+    '<text x="512" y="640" text-anchor="middle" font-family="David Libre" font-weight="700" font-size="400" fill="#1b1b1b">מ</text>',
+  C: () => SQ + stroke("dry", 170, 690, 690, 80) +
+    `<g fill="none" stroke="#f3f3f0" stroke-width="22" stroke-linejoin="round" stroke-linecap="round">
+       <path d="M478 352 C410 338 320 336 262 350 L230 372 L246 394 L210 414 L236 438 L198 462 L232 486 L202 512 L238 536 L214 560 L252 580 C320 604 410 606 478 594 Z"/>
+       <path d="M478 410 C420 404 360 404 300 412 M478 472 C410 470 340 472 270 476 M478 536 C420 540 360 542 300 540" stroke-width="14"/>
+       <path d="M478 352 H556 V594 H478"/><path d="M506 352 V594 M530 352 V594"/>
+       <path d="M556 398 C612 398 634 452 690 458 L828 462 C852 464 852 486 828 488 L690 492 C634 498 612 552 556 552"/>
+       <path d="M290 626 H690 V666 H290 Z"/>
+       <circle cx="370" cy="700" r="30"/><circle cx="500" cy="700" r="30"/><circle cx="630" cy="700" r="30"/>
+     </g>`,
+};
+const svg = (id, px) => `<svg viewBox="0 0 1024 1024" width="${px}" height="${px}">${ICONS[id]().replaceAll('id="fw"', `id="fw${id}${px}"`).replaceAll("url(#fw)", `url(#fw${id}${px})`).replaceAll('id="fd"', `id="fd${id}${px}"`).replaceAll("url(#fd)", `url(#fd${id}${px})`)}</svg>`;
+const ph = (dark) => `<svg class="ph" viewBox="0 0 1024 1024"><rect x="100" y="100" width="824" height="824" rx="185" fill="${dark ? "#4a4a4a" : "#b9b9b9"}"/></svg>`;
+for (const row of document.querySelectorAll(".row")) {
+  const id = row.dataset.dir;
+  row.querySelector(".sizes").innerHTML = [256, 128, 64, 32, 16].map((px) => `<div class="size">${svg(id, px)}<small>${px}</small></div>`).join("");
+  row.querySelector(".docks").innerHTML = [false, true].map((dark) =>
+    `<div class="dock ${dark ? "dark" : "light"}">${ph(dark)}${ph(dark)}${svg(id, 48).replace("<svg ", '<svg class="ph" ')}${ph(dark)}${ph(dark)}<small>Dock · 48</small></div>`).join("");
+}
+document.fonts.ready.then(() => document.body.setAttribute("data-ready", "1"));
+</script>
+</body>
+</html>
